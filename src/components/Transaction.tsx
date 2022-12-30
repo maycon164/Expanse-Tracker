@@ -1,7 +1,8 @@
 import { useContext } from "react"
 import { GlobalContext } from "../context/GlobalState"
+import { Transaction as TransactionType } from "../context/GlobalState"
 
-export const Transaction = ({ transaction }: { transaction: any }) => {
+export const Transaction = ({ transaction }: { transaction: TransactionType }) => {
     const sign = transaction.amount < 0 ? '-' : '+'
     const { deleteTransaction } = useContext(GlobalContext)
 
