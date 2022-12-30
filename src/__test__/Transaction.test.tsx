@@ -5,7 +5,7 @@ import { MockProvider } from './mock/MockProvider'
 import { Transaction } from '../components/Transaction'
 
 describe('Transaction', () => {
-    it('should render a TransactionItem with correct signals and calling Delete functions from provider', async () => {
+    it('should render a TransactionItem with correct signals and calling delete function from provider', async () => {
         const deleteTransactionFn = vi.fn()
 
         const transactionItem1 = {
