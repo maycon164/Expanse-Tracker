@@ -3,8 +3,8 @@ import { GlobalContext, Transaction } from '../../context/GlobalState';
 // Mock Component to GlobalState Provider 
 
 export const MockProvider = (
-    { children, deleteTransactionfn, addTransactionFn, transactionsMock }:
-        { children: any, deleteTransactionfn: any, addTransactionFn: any, transactionsMock?: Transaction[] }
+    { children, deleteTransactionfn, addTransactionfn, transactionsMock }:
+        { children: any, deleteTransactionfn: any, addTransactionfn: any, transactionsMock?: Transaction[] }
 ) => {
 
     const transactions: Transaction[] = [
@@ -24,7 +24,7 @@ export const MockProvider = (
         <GlobalContext.Provider value={{
             transactions: transactionsMock || transactions,
             deleteTransaction: deleteTransactionfn,
-            addTransaction: addTransactionFn
+            addTransaction: addTransactionfn
         }}>
             {children}
         </GlobalContext.Provider >

@@ -11,7 +11,7 @@ describe('[component] Add Transaction', () => {
         render(
             <MockProvider
                 deleteTransactionfn={vitest.fn()}
-                addTransactionFn={addTransactionfn}
+                addTransactionfn={addTransactionfn}
             >
                 <AddTransaction />
             </MockProvider>

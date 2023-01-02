@@ -20,7 +20,7 @@ describe('Transaction', () => {
         }
 
         const { container } = render(
-            <MockProvider addTransactionFn={vi.fn()} deleteTransactionfn={deleteTransactionFn}>
+            <MockProvider addTransactionfn={vi.fn()} deleteTransactionfn={deleteTransactionFn}>
                 <Transaction transaction={transactionItem1} />
                 <Transaction transaction={transactionItem2} />
             </MockProvider>

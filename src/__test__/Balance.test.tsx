@@ -22,7 +22,7 @@ describe('Balance Component', () => {
 
         render(
             <MockProvider
-                addTransactionFn={vitest.fn()}
+                addTransactionfn={vitest.fn()}
                 deleteTransactionfn={vitest.fn()}
                 transactionsMock={transactions}
             >

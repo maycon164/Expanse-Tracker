@@ -8,7 +8,7 @@ describe('Transaction List', () => {
     it('should render a list of transaction', () => {
 
         render(
-            <MockProvider addTransactionFn={vi.fn()} deleteTransactionfn={vi.fn()}>
+            <MockProvider addTransactionfn={vi.fn()} deleteTransactionfn={vi.fn()}>
                 <TransactionList />
             </MockProvider>
         )
